@@ -38,8 +38,8 @@
             <ul>
                 <li><a href="default.asp">Home</a></li>
                 <li><a href="news.asp">News</a></li>
-                <li><a href="contact.asp">Contact</a></li>
-                <li><a href="about.asp"> About</a></li>
+                <li class="list-item"><a href="{{route('contact-us')}}">Contact</a></li>
+                <li class="list -item"><a href="{{route('About-us')}}">About</a></li>
               </ul>
 
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">

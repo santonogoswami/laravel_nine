@@ -14,14 +14,20 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+
     return view('welcome');
 });
-Route::get('/About', function () {
-    return view('About');
-});
-Route::get('/contact', function () {
+Route::get(md5('/about'), function () {
+    $token = $request->session()->token();
+    dd($token);
+
+   })->name('About-us');
+   Route::get(md5('/contact-u'), function () {
     return view('contact');
-});
+  })->name('contact-us');
+  Route::get(md5('/country-u'), function () {
+    return view('country');
+  })->name('country');
 
 
 
