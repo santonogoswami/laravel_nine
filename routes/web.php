@@ -17,11 +17,12 @@ Route::get('/', function () {
 
     return view('welcome');
 });
+
 Route::get(md5('/about'), function () {
     $token = $request->session()->token();
     dd($token);
 
-   })->name('About-us');
+   })->name('About-us');*/
    Route::get(md5('/contact-u'), function () {
     return view('contact');
   })->name('contact-us');
@@ -29,6 +30,7 @@ Route::get(md5('/about'), function () {
     return view('country');
   })->name('country');
 
+  //_invoke
 
 
 
